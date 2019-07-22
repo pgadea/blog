@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
       <span style={{ display: "flex", alignItems: "center" }}>
         <img
           src={gatsbyLogo}
-          alt="Gatsby Garb Logo"
+          alt="Gatsby Logo"
           style={{
             borderRadius: "50%",
             border: "3px solid orange",
@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => (
 
       <div style={{ display: "flex", justifyContent: "space-evenly"}}>
         <NavLink  to="/blog">Blog</NavLink>
-        <NavLink to="/products">Store</NavLink>
+        <NavLink to="/products">Courses</NavLink>
     </div>
 
     </div>

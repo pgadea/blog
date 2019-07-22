@@ -15,17 +15,20 @@ const ProductTemplate = ({ data: { contentfulProduct } }) => (
     >
       {/* Product Info */}
       <h2>
-        {contentfulProduct.name} -{" "}
-        <span style={{ color: "#ccc" }}>
+        {contentfulProduct.name} {" "}
+        {/* <span style={{ color: "#ccc" }}>
           Added on {contentfulProduct.createdAt}
-        </span>
+        </span> */}
       </h2>
       <h4>${contentfulProduct.price}</h4>
       <p>{contentfulProduct.description}</p>
+      <a href="https://www.iamtimcorey.com/p/getting-started-with-net-core?affcode=288799_fzx_ottx" 
+      target="_blank" without rel="noopener noreferrer">
       <Img
         style={{ margin: "0 auto", maxWidth: 600 }}
         fluid={contentfulProduct.image.fluid}
       />
+      </a>
     </div>
   </Layout>
 )

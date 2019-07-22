@@ -10,7 +10,7 @@ const Products = ({ data: { allContentfulProduct } }) => (
       {/* Products List */}
       {allContentfulProduct.edges.map(({ node: product }) => (
         <div key={product.id}>
-          <h2>Garb Products</h2>
+          <h2>Products</h2>
           <Link to={`/products/${product.slug}`} style={{
               textDecoration: 'none', color: '#551a8b' }}>
             <h3>
